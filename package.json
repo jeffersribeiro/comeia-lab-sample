@@ -11,7 +11,7 @@
     "dev": "NODE_ENV=development ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/index.ts",
     "start": "NODE_ENV=production node -r dotenv/config ./dist/index.js",
     "test": "jest --passWithNoTests --no-cache --runInBand",
-    "deploy": "bash deploy.sh",
+    "deploy": "yarn build && bash deploy.sh",
     "test:watch": "npm t -- --watch",
     "lint": "eslint .",
     "format": "prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier --write *.{js,jsx,ts,tsx,json}"
