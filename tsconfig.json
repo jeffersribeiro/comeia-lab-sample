@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "typeRoots": ["./src/types", "node_modules/@types"],
+    "module": "commonjs",
+    "lib": ["ESNext"],
+    "strict": true,
+    "noImplicitOverride": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "incremental": true,
+    "outDir": "dist",
+    "rootDirs": ["src", "tests"],
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@data/*": ["src/*"],
+      "@common/*": ["src/common/*"],
+      "@config/*": ["src/config/*"],
+      "@contracts/*": ["src/contracts/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@modules/*": ["src/modules/*"],
+      "@routes/*": ["src/routes/*"],
+      "@seeds/*": ["src/seeds/*"]
+    }
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,23 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["standard-with-typescript", "prettier"],
+  "overrides": [],
+  "parserOptions": {
+    "project": ["tsconfig.json"],
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/return-await": "off",
+    "@typescript-eslint/no-throw-literal": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/strict-boolean-expressions": "warn"
+  }
+}
